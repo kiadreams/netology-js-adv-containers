@@ -28,7 +28,7 @@ export default class Settings {
     if (difficulties.includes(difficulty)) {
       this._settings.set('difficulty', difficulty);
     } else {
-      throw new Error('Не правильно указана музыкальная композиция');
+      throw new Error('Не правильно указана сложность');
     }
   }
 

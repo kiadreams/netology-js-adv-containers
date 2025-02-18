@@ -6,10 +6,12 @@ const character_2 = {name: 'Vova', lastName: 'Serg'};
 
 test('Testing method "add" of Team\'s class: add an existing character.', () => {
   const team = new Team();
+
   function addExistingCharacter() {
     team.add(character_1);
     team.add(character_1);
   }
+
   expect(addExistingCharacter).toThrow('персонаж уже в командe');
 });
 

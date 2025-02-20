@@ -11,9 +11,7 @@ export default class Team {
   }
 
   addAll(...characters) {
-    for (const character of characters) {
-      this.memebers.add(character);
-    }
+    characters.forEach(character => this.add(character));
   }
 
   toArray() {
